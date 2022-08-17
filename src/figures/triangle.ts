@@ -9,4 +9,8 @@ export class Triange {
     this.height = height;
     this.heightPos = heightPos;
   }
+
+  area(): number {
+    return (this.base * this.height) / 2;
+  }
 }
