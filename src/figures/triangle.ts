@@ -32,12 +32,6 @@ export class Triange implements Figure {
   }
 
   perimeter(): number {
-    if (this.heightPos === 0 || this.heightPos === this.base) {
-      return (
-        this.height + this.base + Math.sqrt(this.height ** 2 + this.base ** 2)
-      );
-    }
-
     return (
       this.base +
       Math.sqrt(this.heightPos ** 2 + this.height ** 2) +
