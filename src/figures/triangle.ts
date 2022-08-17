@@ -5,7 +5,7 @@ import Figure from './figure';
  *
  * length of it's base,
  *
- * it's height
+ * it's height,
  *
  * lenght between left coordinate of it's base and low coordinate of it's height
  */
