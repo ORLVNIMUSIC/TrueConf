@@ -2,9 +2,9 @@
   "name": "trueconf",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "npx tsc && cd src && node index.js"
+    "test": "npx tsc && node dist/index.js"
   },
   "author": "",
   "license": "ISC",
