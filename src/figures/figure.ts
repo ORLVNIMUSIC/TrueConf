@@ -5,12 +5,12 @@
  */
 export default interface Figure {
   /**
-   * method for calculating area of the object
+   * Method for calculating area of the object
    */
   area(): number;
 
   /**
-   * method for calculating perimeter of the object
+   * Method for calculating perimeter of the object
    */
   perimeter(): number;
 }
