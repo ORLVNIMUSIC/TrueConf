@@ -1,4 +1,5 @@
 import Figure from './figure';
+import { Round } from './round';
 
 /**
  * Class, representating a triangle with known:
@@ -52,5 +53,39 @@ export class Triangle implements Figure {
       Math.sqrt(this.heightPos ** 2 + this.height ** 2) +
       Math.sqrt((this.base - this.heightPos) ** 2 + this.height ** 2)
     );
+  }
+
+  /**
+   * Method checks if the triangle may circumscribe the chosen round
+   * @param round A round you would try to inscribe into the triangle
+   * @returns true - if the triangle is circumscribible
+   * @returns false - if the triangle isn't circumscribible
+   */
+  isCircumscribable(round: Round): boolean {
+    return round.rad === (this.area() * 2) / this.perimeter();
+  }
+
+  /**
+   * Method checks if the triangle may inscribe into the chosen round
+   * @param round A round you would try the triangle to inscribe into
+   * @returns true - if the triangle is inscribable
+   * @returns false - if the triangle isn't inscribable
+   */
+  isInscribable(round: Round): boolean {
+    return (
+      round.rad ===
+      (this.base *
+        Math.sqrt(this.heightPos ** 2 + this.height ** 2) *
+        Math.sqrt((this.base - this.heightPos) ** 2 + this.height ** 2)) /
+        (4 * this.area())
+    );
+  }
+
+  /**
+   * Method for creating inscribed into the triangle round
+   * @returns inscribed into the triangle round
+   */
+  inscribedRound(): Round {
+    return new Round((this.area() * 2) / this.perimeter());
   }
 }
