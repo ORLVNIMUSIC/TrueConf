@@ -2,8 +2,6 @@
 
 **easyfigjs** is a typesafe little library for initializing and computing characteristics of geometric figures.
 
----
-
 ## Instalation
 
 Initialize a project if you don't have one with any package manager (using NPM for the example):
@@ -20,11 +18,7 @@ npm i easyfigjs --save
 
 And you're good to go.
 
----
-
 ## Usage
-
----
 
 ### Round example
 
@@ -44,9 +38,40 @@ const myRound: Round = new Round(4);
 
 After that it is possible to perform different actions with the object, like:
 
+Calculating the area of the round
+
 ```ts
-myRound.area(); // for calculating the area of the round
-myRound.perimeter(); // for calculating the perimeter of the round
+myRound.area();
+```
+
+Calculating the perimeter of the round
+
+```ts
+myRound.perimeter();
+```
+
+Checking if the round may be inscribed into the chosen rectangle
+
+```ts
+myRound.isInscribable();
+```
+
+Checking if the round may circumscribe the chosen rectangle
+
+```ts
+myRound.isCircumscribable();
+```
+
+Creating new inscribed into the round rectangle with chosen length of one side
+
+```ts
+myRound.inscribedRectangle();
+```
+
+Creating new inscribed into the round square
+
+```ts
+myRound.inscribedSquare();
 ```
 
 ---
@@ -66,9 +91,34 @@ const myRightTriangle = new Triangle(6, 4); // for right triangle
 
 All the methods of calculating it's measurements are accessible as well:
 
+Calculating the area of the triangle
+
 ```ts
 myTriangle.area();
+```
+
+Calculating the perimeter of the triangle
+
+```ts
 myRightTriangle.perimeter();
+```
+
+Checking if the triangle may circumscribe the chosen round
+
+```ts
+myTriangle.isCircumscribable();
+```
+
+Checking if the triangle may inscribe into the chosen round
+
+```ts
+myTriangle.isInscribable();
+```
+
+Creating inscribed into the triangle round
+
+```ts
+myTriangle.inscribedRound();
 ```
 
 ---
@@ -85,7 +135,38 @@ const myRectangle = new Rectangle(5, 3);
 
 It is possible to perform calculations of it's measurements as well:
 
+Calculating the area of the rectangle
+
 ```ts
 myRectangle.area();
+```
+
+Calculating the perimeter of the rectangle
+
+```ts
 myRectangle.perimeter();
+```
+
+Checking if the rectangle is square
+
+```ts
+myRectangle.isSquare();
+```
+
+Checking if the rectangle may circumscribe the chosen round
+
+```ts
+myRectangle.isCircumscribable();
+```
+
+Checking if the rectangle may be inscribed into the chosen round
+
+```ts
+myRectangle.isInscribable();
+```
+
+Creating a circumscribed around the rectangle round
+
+```ts
+myRectangle.circumscribedRound();
 ```
