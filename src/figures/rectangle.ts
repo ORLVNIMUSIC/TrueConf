@@ -21,7 +21,7 @@ export class Rectangle implements Figure {
    */
   constructor(aSide: number, bSide: number) {
     if (aSide <= 0 || bSide <= 0) {
-      throw 'Sides can not be of negative length';
+      throw 'Sides cannot be of negative length';
     }
     this.aSide = aSide;
     this.bSide = bSide;
