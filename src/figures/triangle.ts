@@ -7,11 +7,22 @@ import Figure from './figure';
  *
  * it's height,
  *
- * length between left coordinate of it's base and low coordinate of it's height
+ * length between left edge of it's base and low edge of it's height
  */
 export class Triangle implements Figure {
+  /**
+   * Length of the triangle's base
+   */
   readonly base: number;
+
+  /**
+   * Length of the triangle's height
+   */
   readonly height: number;
+
+  /**
+   * Length between left edge of triangle's base and low edge of triangle's height
+   */
   readonly heightPos: number;
 
   /**

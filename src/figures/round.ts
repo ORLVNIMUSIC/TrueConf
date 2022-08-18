@@ -4,6 +4,9 @@ import Figure from './figure';
  * Class, representating a Round of known radius
  */
 export class Round implements Figure {
+  /**
+   * Radius of the round
+   */
   readonly rad: number;
 
   /**
