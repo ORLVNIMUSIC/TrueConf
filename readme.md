@@ -53,7 +53,7 @@ myRound.perimeter(); // for calculating the perimeter of the round
 
 ### Triangle example
 
-To create a triangle it's necessary to know lengths of it's base and height, and the lenght between left edge of it's base and low edge of it's height.
+To create a triangle it's necessary to know lengths of it's base and height, and the length between left edge of it's base and low edge of it's height.
 
 If you want to create a right triangle you may just leave the third parameter empty as it's optional.
 
@@ -75,7 +75,7 @@ myRightTriangle.perimeter();
 
 ### Rectangle example
 
-To create a rectangle you must know lenghts of it's sides:
+To create a rectangle you must know length of it's sides:
 
 ```ts
 import { Rectangle } from 'easyfigjs';

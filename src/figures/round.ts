@@ -10,6 +10,9 @@ export class Round implements Figure {
    * @param rad radius of the round
    */
   constructor(rad: number) {
+    if (rad <= 0) {
+      throw 'Radius can not be of negative length';
+    }
     this.rad = rad;
   }
 

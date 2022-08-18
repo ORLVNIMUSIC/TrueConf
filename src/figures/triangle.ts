@@ -7,7 +7,7 @@ import Figure from './figure';
  *
  * it's height,
  *
- * lenght between left coordinate of it's base and low coordinate of it's height
+ * length between left coordinate of it's base and low coordinate of it's height
  */
 export class Triange implements Figure {
   readonly base: number;
@@ -17,10 +17,14 @@ export class Triange implements Figure {
   /**
    * @param base length of base of the triangle
    * @param height height of the triangle
-   * @param heightPos lenght between left coordinate of triangle's base and low coordinate of triangle's height
+   * @param heightPos length between left edge of triangle's base and low edge of triangle's height
    */
   constructor(base: number, height: number, heightPos: number = 0) {
+    if (base <= 0 || height <= 0) {
+      throw 'Base or height can not be of negative length';
+    }
     if (heightPos < 0 || heightPos > base) {
+      throw "Height position must be at least 0 and at maximum of length of triangle's base";
     }
     this.base = base;
     this.height = height;

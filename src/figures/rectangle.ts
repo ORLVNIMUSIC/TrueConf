@@ -8,10 +8,13 @@ export class Rectangle implements Figure {
   readonly bSide: number;
 
   /**
-   * @param aSide lenght of one of the two known sides of the rectangle
-   * @param bSide lenght of another of the two known sides of the rectangle
+   * @param aSide length of one of the two known sides of the rectangle
+   * @param bSide length of another of the two known sides of the rectangle
    */
   constructor(aSide: number, bSide: number) {
+    if (aSide <= 0 || bSide <= 0) {
+      throw 'Sides can not be of negative length';
+    }
     this.aSide = aSide;
     this.bSide = bSide;
   }
