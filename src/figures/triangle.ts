@@ -9,7 +9,7 @@ import Figure from './figure';
  *
  * length between left coordinate of it's base and low coordinate of it's height
  */
-export class Triange implements Figure {
+export class Triangle implements Figure {
   readonly base: number;
   readonly height: number;
   readonly heightPos: number;

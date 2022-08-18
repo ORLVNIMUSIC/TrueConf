@@ -1,5 +1,5 @@
 import { Round } from './figures/round';
 import { Rectangle } from './figures/rectangle';
-import { Triange } from './figures/triangle';
+import { Triangle } from './figures/triangle';
 
-export { Round, Rectangle, Triange };
+export { Round, Rectangle, Triangle };

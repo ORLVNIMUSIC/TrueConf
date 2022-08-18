@@ -15,7 +15,7 @@ npm init
 After the project's initialization, install the library via your package manager:
 
 ```bash
-npm i easyfigjs --save-dev
+npm i easyfigjs --save
 ```
 
 And you're good to go.
