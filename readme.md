@@ -2,7 +2,7 @@
 
 **easyfigjs** is a typesafe little library for initializing and computing characteristics of geometric figures.
 
-## Instalation
+## Installation
 
 Initialize a project if you don't have one with any package manager (using NPM for the example):
 
